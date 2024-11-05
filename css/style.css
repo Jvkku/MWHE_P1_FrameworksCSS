@@ -1,99 +1,58 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Estilos personalizados */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-}
-
-header {
     background-color: #000;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.menu-btn {
-    background-color: #d7ef8d;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.nav-links a {
-    color: #d7ef8d;
-    margin-right: 20px;
-    text-decoration: none;
-}
-
-.logo h1 {
     color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: freefatfont;
-}
-
-.search-container input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 200px;
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
     background-color: #e9e322;
-}
-
-.text-content {
-    max-width: 50%;
+    border-radius: 20px;
+    padding: 40px;
 }
 
 .text-content h1 {
     font-size: 72px;
+    font-weight: bold;
     color: #4367f4;
 }
 
 .text-content p {
-    margin: 20px 0;
     font-size: 16px;
+    color: #333;
 }
 
-.cta-btn {
-    display: inline-block;
-    padding: 10px 20px;
+.btn-pink {
     background-color: #ff007b;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px 20px;
     font-weight: bold;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
+.btn-pink:hover {
     background-color: #d60065;
+    color: #fff;
 }
 
-.image-content img {
-    max-width: 100%;
+.image-wrapper {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.image-wrapper img {
     border-radius: 10px;
+}
+
+.navbar .btn-outline-warning {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #fff !important;
 }
