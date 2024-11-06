@@ -1,29 +1,130 @@
 /* Estilos personalizados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'FreeFat';
+    src: url('../typefaces/FREE_FAT_FONT/WEB/FREEFATFONT-Regular.woff2') format('woff2'),
+         url('../typefaces/FREE_FAT_FONT/WEB/FREEFATFONT-Regular.woff') format('woff'),
+         url('../typefaces/FREE_FAT_FONT/OTF/FREEFATFONT-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akony';
+    src: url('../typefaces/AKONY_FONT/akony.woff') format('woff'),
+         url('../typefaces/AKONY_FONT/akony.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 body {
     background-color: #000;
-    color: #fff;
+    color: #fff;  
+    font-family: 'Satoshi', sans-serif;
 }
 
+.navbar {
+    padding: 0;
+    margin: 20px 0 !important;
+}
+
+nav .container {
+    margin: 0 20px;
+    padding: 0;
+    max-width: 5000px;
+}
+
+/* Botón Menú */
+.btn-menu {
+    background-color: #e9e34b;
+    color: #3869b0;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12;
+}
+
+/* Logo centrado */
+.logo {
+    font-family: 'FreeFat', sans-serif;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 64px !important;
+}
+
+/* Barra de búsqueda con ícono */
+.search-form .form-control {
+    background-color: white;
+    border: none;
+    color: #fff;
+    max-width: 400px;
+    margin: 0 !important;
+}
+
+/* Hero */
 .hero {
-    background-color: #e9e322;
-    border-radius: 20px;
-    padding: 40px;
+    background-color: #e9e34b;
+    border-radius: 24px;
+    padding: 0 !important; /* Elimina el padding general del hero */
+    margin: 0 20px; /* Solo aplica margen lateral */
+}
+
+.image-content {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.text-content {
+    padding: 48px 0;
 }
 
 .text-content h1 {
-    font-size: 72px;
+    font-size: 60px;
     font-weight: bold;
-    color: #4367f4;
+    color: #3869b0;
+    font-family: 'Akony', sans-serif;
 }
 
 .text-content p {
     font-size: 16px;
-    color: #333;
+    color: #000;
 }
 
 .btn-pink {
-    background-color: #ff007b;
+    background-color: #e6007e;
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
@@ -33,26 +134,48 @@ body {
 }
 
 .btn-pink:hover {
-    background-color: #d60065;
+    background-color: #e6007e;
     color: #fff;
 }
 
-.image-wrapper {
-    background-color: white;
-    padding: 10px;
-    border-radius: 20px;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+/* Footer */
+.footer {
+    background-color: #3869b0;
+    margin-top: 64px;
 }
 
-.image-wrapper img {
-    border-radius: 10px;
-}
-
-.navbar .btn-outline-warning {
+.footer h5 {
     font-weight: bold;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    color: #fff !important;
+.footer .list-unstyled li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .list-unstyled li a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.newsletter .form-control {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.newsletter .btn-yellow {
+    background-color: #e9e34b;
+    color: #3664a2;
+    border: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
