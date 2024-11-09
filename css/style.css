@@ -57,14 +57,68 @@ nav .container {
     max-width: 5000px;
 }
 
-/* Botón Menú */
+.btn-menu:hover {
+    color: #fff;
+    background-color: #e6007e;
+}
+
+/* Estilos del contenedor de menú */
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón principal del menú */
 .btn-menu {
-    background-color: #e9e34b;
+    background-color: #e9e34b; /* Amarillo inicial */
     color: #3869b0;
     font-weight: bold;
     border: none;
-    padding: 10px 20px;
-    border-radius: 12;
+    padding: 12px 20px; /* Ajuste de padding para alinear altura */
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; /* Alineación del contenido verticalmente */
+}
+
+/* Cuando el menú está activo */
+.btn-menu.active {
+    background-color: #e6007e; /* Magenta al hacer clic */
+    color: #fff;
+    border-top-right-radius: 0; /* Conexión de esquinas */
+    border-bottom-right-radius: 0;
+}
+
+/* Contenedor desplegable de opciones */
+.menu-options {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e6007e; /* Magenta para el bloque */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+    height: 100%; /* Asegura la misma altura que el botón principal */
+}
+
+.menu-options a {
+    padding: 12px 20px; /* Ajuste de padding para igualar altura */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Alineación del texto verticalmente */
+    height: 100%; /* Asegura que el enlace ocupe toda la altura */
+}
+
+.menu-options a:hover {
+    background-color: #ff4081; /* Color en hover */
+    color: #fff;
 }
 
 /* Logo centrado */
@@ -76,21 +130,36 @@ nav .container {
 }
 
 /* Barra de búsqueda con ícono */
-.search-form .form-control {
-    background-color: white;
-    border: none;
-    color: #fff;
-    max-width: 400px;
-    margin: 0 !important;
+.search {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-/* Hero */
+.search .form-control {
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.search .btn-yellow {
+    background-color: #e9e34b;
+    color: #3664a2;
+    border: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero {
     background-color: #e9e34b;
     border-radius: 24px;
     padding: 0 !important; /* Elimina el padding general del hero */
     margin: 0 20px; /* Solo aplica margen lateral */
+    border: 3px solid #ffffff; /* Borde blanco de 3px */
 }
+
 
 .image-content {
     padding: 0;
@@ -160,7 +229,7 @@ nav .container {
 /* Newsletter */
 .newsletter {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 12px;
     overflow: hidden;
 }
 
