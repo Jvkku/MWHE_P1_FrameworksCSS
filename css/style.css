@@ -186,11 +186,12 @@ nav .container {
 }
 
 .text-content {
-    padding: 0 48px;
+    padding: 3em;
+    padding-bottom: 0;
 }
 
 .text-content h1 {
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: bold;
     color: #3869b0 !important;
     font-family: 'Akony', sans-serif;
@@ -310,7 +311,7 @@ nav .container {
     }
 
     .newartists div p {
-        padding: 3rem;
+        padding: 1rem;
         text-align: justify;
     }
 
