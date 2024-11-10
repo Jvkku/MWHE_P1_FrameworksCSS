@@ -342,6 +342,11 @@ nav .container {
     border-radius: 0;
 }
 
+.container-news {
+    max-width: 100%;
+    padding: 0;
+}
+
 .marquee {
     font-family: 'Akony', sans-serif;
     font-size: 48px;
@@ -349,16 +354,16 @@ nav .container {
     white-space: nowrap;
     color: #fff;
 }
+
 .fa-xmark {
     color: #e6007e;
     font-size: 48px; /* Usa font-size en lugar de size */
 }
 
-/* .container-news {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-} */
+.container-newscard {
+    padding: 0 20px;
+    margin: 0 !important;
+}
 
 /* Estilos para las fichas de noticias */
 .news-card {
@@ -369,6 +374,8 @@ nav .container {
     flex-direction: column;
     height: 400px;
     color: #fff;
+    margin: 0 !important;
+    padding: 0;
 }
 
 .news-image {
@@ -422,4 +429,3 @@ nav .container {
     font-size: 24px;
     position: relative;
 }
-
