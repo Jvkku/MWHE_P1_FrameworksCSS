@@ -409,6 +409,15 @@ nav .container {
     vertical-align: middle; /* Alineación vertical para centrar con el texto */
 }
 
+.marquee-music {
+    background-color: #e6007e;
+    padding-top: 10px;
+    margin-top: 48px;
+}
+
+.marquee-music .fa-xmark{
+    color:#e9e34b;
+}
 
 .container-newscard {
     padding: 0 20px;
