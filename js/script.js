@@ -36,3 +36,13 @@ function searchFunction() {
         window.location.href = 'news.html';
     }
 }
+
+$(document).ready(function(){
+    $('.marquee').marquee({
+        duration: 8000,
+        gap: 20,
+        duplicated: true,
+        delayBeforeStart: 0,
+        startVisible: true,
+    });
+});
