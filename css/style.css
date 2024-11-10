@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Satoshi', sans-serif;
+}
+
 @font-face {
     font-family: 'FreeFat';
     src: url('../typefaces/FREE_FAT_FONT/WEB/FREEFATFONT-Regular.woff2') format('woff2'),
@@ -185,7 +189,7 @@ nav .container {
 .text-content h1 {
     font-size: 60px;
     font-weight: bold;
-    color: #3869b0;
+    color: #3869b0 !important;
     font-family: 'Akony', sans-serif;
 }
 
@@ -195,17 +199,25 @@ nav .container {
 }
 
 .btn-pink {
-    background-color: #e6007e;
-    color: white;
-    border: 3px solid black;
+    font-size: 1.5rem;
+    color: #fafafa;
+    text-transform: uppercase;
     padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background-color: #e6007e;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+  }
+  
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
 }
 
 .btn-pink:hover {
-    background-color: #e6007e;
+    background-color: #e6007fcb;
     color: #fff;
 }
 /* ---------------------------------------------------------------- */
@@ -268,6 +280,7 @@ nav .container {
     /* Acordeón */
     .newartists h1 {
     padding-top: 5rem;
+    padding-left: 1rem;
     }
     
     .accordion {
@@ -284,14 +297,49 @@ nav .container {
     background-color: #e9e34b;
     font-family: 'Akony', sans-serif;
     font-size: 4rem;
-    padding: 3.5rem 0 3rem 2rem;
+    padding: 3.5rem 3rem 3rem 2rem;
     }
     
     .accordion-button:not(.collapsed) {
     background-color: #e6007e;
     color: #ffffff;
     }
-    
+
+    .newartists div p {
+        padding: 3rem;
+        text-align: justify;
+    }
+
+    .btn-primary {
+    margin-bottom: 2rem !important;
+    margin-right: 4rem !important;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5rem;
+    color: #3664a2;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #fafafa;
+    background: #e9e34b;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 35px 0;
+
+}
+  
+    .btn:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    background: #e6007e !important;
+    background-color: #e6007e !important;
+    border-color: #fff !important;
+}
+  
+  .btn-primary:hover {
+    background-color: #e6007e;
+    border-color: #fff;
+  }
+
     .me-3 {
     margin-right: 1rem;
     }
