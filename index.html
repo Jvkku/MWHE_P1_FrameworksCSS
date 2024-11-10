@@ -124,92 +124,100 @@
         </section>
         
         <section class="newartists">
-        <div>
-        <h1 class="display-1">Artistas emergentes</h1>
-        </div>
-        <div class="accordion" id="accordionExample">
-        <!-- Primer ítem del acordeón -->
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Judeline
-        </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body d-flex flex-column flex-md-row">
-        <!-- Imagen ocupa 1/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="image-container col-12 col-md-4">
-        <img src="media/img/judeline.jpg" alt="Judeline" class="img-fluid me-3">
-        </div>
-        <!-- Texto ocupa 2/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="col-12 col-md-8">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Segundo ítem del acordeón -->
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        RAYE
-        </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body d-flex flex-column flex-md-row">
-        <!-- Imagen ocupa 1/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="image-container col-12 col-md-4">
-        <img src="media/img/raye.webp" alt="RAYE" class="img-fluid me-3">
-        </div>
-        <!-- Texto ocupa 2/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="col-12 col-md-8">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Tercer ítem del acordeón -->
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Samuraï
-        </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body d-flex flex-column flex-md-row">
-        <!-- Imagen ocupa 1/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="image-container col-12 col-md-4">
-        <img src="media/img/samurai.jpg" alt="Samuraï" class="img-fluid me-3">
-        </div>
-        <!-- Texto ocupa 2/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="col-12 col-md-8">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-        </div>
-        </div>
-        </div>
-        <!-- Cuarto ítem del acordeón -->
-        <div class="accordion-item">
-        <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Paula Cendejas
-        </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body d-flex flex-column flex-md-row">
-        <!-- Imagen ocupa 1/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="image-container col-12 col-md-4">
-        <img src="media/img/paulacendejas.jpg" alt="Paula Cendejas" class="img-fluid me-3">
-        </div>
-        <!-- Texto ocupa 2/3 del espacio en pantallas medianas y grandes, 100% en pantallas pequeñas -->
-        <div class="col-12 col-md-8">
-        <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+            <div>
+                <h1 class="display-1">Artistas emergentes</h1>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <!-- Primer ítem del acordeón: Judeline -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Judeline
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                            <div class="image-container col-12 col-md-4">
+                                <img src="media/img/judeline.jpg" alt="Judeline" class="img-fluid me-3">
+                            </div>
+                            <div class="col-12 col-md-8 p-3">
+                                <p>Judeline es una de esas artistas que parecen traer una nueva perspectiva con cada nota. Con raíces en el flamenco y un enfoque experimental, Judeline desafía las normas de la música tradicional española y abre nuevas puertas en el género alternativo. Su voz etérea y letras profundas son capaces de transportar al oyente a un mundo introspectivo, lleno de matices emocionales. Judeline no solo canta, sino que cuenta historias, y en cada una de ellas se percibe un alma creativa y en constante evolución.</p>
+                            </div>
+                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                                <button class="btn btn-primary">Saber más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Segundo ítem del acordeón: RAYE -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            RAYE
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                            <div class="image-container col-12 col-md-4">
+                                <img src="media/img/raye.webp" alt="RAYE" class="img-fluid me-3">
+                            </div>
+                            <div class="col-12 col-md-8 p-3">
+                                <p>Desde el Reino Unido, Raye ha ganado notoriedad con su habilidad para transformar experiencias personales en himnos que conectan con miles de personas alrededor del mundo. Con influencias que van desde el R&B hasta el dance-pop, Raye combina letras crudas y emocionales con una producción innovadora, logrando canciones que no solo son pegajosas, sino que también tienen una profundidad inusual en la música pop contemporánea. Su habilidad para reinventarse y explorar temáticas complejas la posiciona como una de las artistas emergentes más prometedoras a nivel internacional.</p>
+                            </div>
+                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                                <button class="btn btn-primary">Saber más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tercer ítem del acordeón: Samuraï -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Samuraï
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                            <div class="image-container col-12 col-md-4">
+                                <img src="media/img/samurai.jpg" alt="Samuraï" class="img-fluid me-3">
+                            </div>
+                            <div class="col-12 col-md-8 p-3">
+                                <p>Con un estilo marcado por la introspección y una sensibilidad lírica cautivadora, Samuraï es una de las voces que está ganando terreno en la música urbana española. Su enfoque en temas emocionales y su habilidad para fusionar géneros le ha permitido conectar profundamente con su audiencia. Su música es un reflejo de las complejidades de la vida y el amor, y cada canción es una invitación a explorar esas emociones ocultas que todos llevamos dentro.</p>
+                            </div>
+                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                                <button class="btn btn-primary">Saber más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Cuarto ítem del acordeón: Paula Cendejas -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Paula Cendejas
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                            <div class="image-container col-12 col-md-4">
+                                <img src="media/img/paulacendejas.jpg" alt="Paula Cendejas" class="img-fluid me-3">
+                            </div>
+                            <div class="col-12 col-md-8 p-3">
+                                <p>Paula Cendejas es una artista que combina elegancia y fuerza en cada una de sus producciones. Con una trayectoria que comenzó en redes sociales, su talento y su voz envolvente la han llevado a consolidarse como una de las propuestas más frescas de la escena latina. Su estilo mezcla el pop con matices urbanos y letras sinceras, creando una experiencia sonora que es tan pegajosa como íntima. Cada lanzamiento de Paula reafirma su capacidad para reinventarse y conectar a través de sus letras.</p>
+                            </div>
+                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                                <button class="btn btn-primary">Saber más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     <!-- ----------------------------------------------------------- -->
     
     <footer class="footer bg-primary text-light py-5">
