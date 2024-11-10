@@ -349,7 +349,7 @@ nav .container {
 
 /* Footer */
 .footer {
-    background-color: #3869b0;
+    background-color: #3869b0 !important;
     margin-top: 64px;
 }
 
