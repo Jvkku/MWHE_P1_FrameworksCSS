@@ -287,6 +287,7 @@ nav .container {
     --bs-accordion-border-color: #000000;
     --bs-accordion-btn-focus-box-shadow: none;
     --bs-accordion-bg: #3869b0;
+    width: 100%;
     }
     
     .accordion-item {
@@ -296,7 +297,7 @@ nav .container {
     .accordion-button {
     background-color: #e9e34b;
     font-family: 'Akony', sans-serif;
-    font-size: 4rem;
+    font-size: 100%;
     padding: 3.5rem 3rem 3rem 2rem;
     }
     
