@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROVE</title>
-    
-    <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
-                <!-- Botón Menú -->
                 <div class="menu-container">
                     <button id="menuButton" class="btn btn-menu">Menú</button>
                     <div id="menuOptions" class="menu-options d-none">
@@ -26,43 +20,32 @@
                         <a href="news.html" class="btn btn-menu-option">Noticias</a>
                     </div>
                 </div>
-                
-                <!-- Logo centrado -->
                 <a class="logo navbar-brand position-absolute top-50 start-50 translate-middle text-center" href="index.html">GROVE</a>
-
-                <!-- Barra de búsqueda -->
-                <!-- Barra de búsqueda y el icono de búsqueda -->
                 <div class="d-none d-md-flex search ms-3">
                     <input type="text" class="form-control" placeholder="Buscar aquí..." id="searchInput">
                     <button class="btn btn-yellow" onclick="searchFunction()"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-
-                <!-- Icono de lupa visible solo en pantallas pequeñas -->
                 <div class="d-flex d-md-none ms-3">
                     <button class="btn btn-yellow" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-
             </div>
         </nav>
     </header>
-
     <section class="hero py-5">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-md-6 text-content">
+                <div class="col-md-5 text-content">
                     <h1 class="display-1 text-primary">tiago pzk</h1>
                     <p class="lead">
                         Tiago PZK ha lanzado su nuevo album "GottiA", un album que fusiona reggaetón, trap y electrónica, y marca una nueva etapa en su carrera. Inspirado en su crecimiento personal y en colaboraciones internacionales, el álbum incluirá artistas de renombre y explorará sonidos frescos. Además, Tiago ha anunciado su gira "GottiA Tour", que comenzará en marzo de 2025 en Argentina y recorrerá América Latina, Estados Unidos, y Europa, con shows llenos de sorpresas y una puesta en escena espectacular.</p>
                     <a href="#" class="btn btn-pink btn-lg">PINCHA AQUÍ</a>
                 </div>
-                <div class="col-md-6 image-content">
+                <div class="col-md-7 image-content">
                     <img src="media/img/TioConGafas.png" alt="Persona con gafas" class="img-fluid hero-img">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- ----------------------------------------------------------- -->
     <div class="marquee marquee-music mb-5">
         GROVE <i class="fa-solid fa-xmark fa-2xl"></i> GROVE <i class="fa-solid fa-xmark fa-2xl"></i> GROVE <i class="fa-solid fa-xmark fa-2xl"></i> 
     </div>
@@ -75,168 +58,154 @@
                 <div class="card pink">
                     <img src="media/img/emilia.jpg" class="card-img-top" alt="Lit Killah">
                     <div class="card-body">
-                    <h5 class="card-title">Emilia</h5>
-                    <p class="card-text">31 | 05 | 2025</p>
-                    <p class="event-location">Wizink Center, Madrid</p>
+                        <h5 class="card-title">Emilia</h5>
+                        <p class="card-text">31 | 05 | 2025</p>
+                        <p class="event-location">Wizink Center, Madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
+                <div class="card blue">
+                    <img src="media/img/litkillah.jpg" class="card-img-top" alt="Lit Killah">
+                    <div class="card-body">
+                        <h5 class="card-title">Lit Killah</h5>
+                        <p class="card-text">06 | 11 | 2024</p>
+                        <p class="event-location">Sala Cool, Madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
+                <div class="card pink">
+                    <img src="media/img/mariabecerra.jpg" class="card-img-top" alt="Lit Killah">
+                    <div class="card-body">
+                        <h5 class="card-title">María Becerra</h5>
+                        <p class="card-text">04 | 01 | 2025</p>
+                        <p class="event-location">Wizink Center, Madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
+                <div class="card blue">
+                    <img src="media/img/tiago.jpg" class="card-img-top" alt="Lit Killah">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiago PZK</h5>
+                        <p class="card-text">14 | 02 | 2025</p>
+                        <p class="event-location">Wizink Center, Madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
+                <div class="card pink">
+                    <img src="media/img/belenaguilera.jpg" class="card-img-top" alt="Lit Killah">
+                    <div class="card-body">
+                        <h5 class="card-title">Belén Aguilera</h5>
+                        <p class="card-text">12 | 10 | 2025</p>
+                        <p class="event-location">Wizink Center, Madrid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
+                <div class="card blue">
+                    <img src="media/img/lolaindigo.jpg" class="card-img-top" alt="Lit Killah">
+                    <div class="card-body">
+                        <h5 class="card-title">Lola Índigo</h5>
+                        <p class="card-text">22 | 03 | 2025</p>
+                        <p class="event-location">Santiago Bernabéu, Madrid</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
-            <div class="card blue">
-                <img src="media/img/litkillah.jpg" class="card-img-top" alt="Lit Killah">
-                <div class="card-body">
-                    <h5 class="card-title">Lit Killah</h5>
-                    <p class="card-text">06 | 11 | 2024</p>
-                    <p class="event-location">Sala Cool, Madrid</p>
-                </div>
-            </div>
+    </section>
+    <section class="newartists">
+        <div>
+            <h1 class="display-1">Artistas emergentes</h1>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
-        <div class="card pink">
-        <img src="media/img/mariabecerra.jpg" class="card-img-top" alt="Lit Killah">
-        <div class="card-body">
-        <h5 class="card-title">María Becerra</h5>
-        <p class="card-text">04 | 01 | 2025</p>
-        <p class="event-location">Wizink Center, Madrid</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
-        <div class="card blue">
-        <img src="media/img/tiago.jpg" class="card-img-top" alt="Lit Killah">
-        <div class="card-body">
-        <h5 class="card-title">Tiago PZK</h5>
-        <p class="card-text">14 | 02 | 2025</p>
-        <p class="event-location">Wizink Center, Madrid</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
-        <div class="card pink">
-        <img src="media/img/belenaguilera.jpg" class="card-img-top" alt="Lit Killah">
-        <div class="card-body">
-        <h5 class="card-title">Belén Aguilera</h5>
-        <p class="card-text">12 | 10 | 2025</p>
-        <p class="event-location">Wizink Center, Madrid</p>
-        </div>
-        </div>
-        </div>
-        
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 mb-4">
-        <div class="card blue">
-        <img src="media/img/lolaindigo.jpg" class="card-img-top" alt="Lit Killah">
-        <div class="card-body">
-        <h5 class="card-title">Lola Índigo</h5>
-        <p class="card-text">22 | 03 | 2025</p>
-        <p class="event-location">Santiago Bernabéu, Madrid</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        
-        <section class="newartists">
-            <div>
-                <h1 class="display-1">Artistas emergentes</h1>
-            </div>
-            <div class="accordion" id="accordionExample">
-                <!-- Primer ítem del acordeón: Judeline -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Judeline
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
-                            <div class="image-container col-12 col-md-4">
-                                <img src="media/img/judeline.jpg" alt="Judeline" class="img-fluid me-3">
-                            </div>
-                            <div class="text col-12 col-md-8 p-3">
-                                <p>Judeline es una de esas artistas que parecen traer una nueva perspectiva con cada nota. Con raíces en el flamenco y un enfoque experimental, Judeline desafía las normas de la música tradicional española y abre nuevas puertas en el género alternativo. Su voz etérea y letras profundas son capaces de transportar al oyente a un mundo introspectivo, lleno de matices emocionales. Judeline no solo canta, sino que cuenta historias, y en cada una de ellas se percibe un alma creativa y en constante evolución.</p>
-                            </div>
-                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
-                                <button class="btn btn-primary">Saber más</button>
-                            </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Judeline
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                        <div class="image-container col-12 col-md-4">
+                            <img src="media/img/judeline.jpg" alt="Judeline" class="img-fluid me-3">
                         </div>
-                    </div>
-                </div>
-        
-                <!-- Segundo ítem del acordeón: RAYE -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            RAYE
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
-                            <div class="image-container col-12 col-md-4">
-                                <img src="media/img/raye.webp" alt="RAYE" class="img-fluid me-3">
-                            </div>
-                            <div class="col-12 col-md-8 p-3">
-                                <p>Desde el Reino Unido, Raye ha ganado notoriedad con su habilidad para transformar experiencias personales en himnos que conectan con miles de personas alrededor del mundo. Con influencias que van desde el R&B hasta el dance-pop, Raye combina letras crudas y emocionales con una producción innovadora, logrando canciones que no solo son pegajosas, sino que también tienen una profundidad inusual en la música pop contemporánea.</p>
-                            </div>
-                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
-                                <button class="btn btn-primary">Saber más</button>
-                            </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <p>Judeline es una de esas artistas que parecen traer una nueva perspectiva con cada nota. Con raíces en el flamenco y un enfoque experimental, Judeline desafía las normas de la música tradicional española y abre nuevas puertas en el género alternativo.</p>
                         </div>
-                    </div>
-                </div>
-        
-                <!-- Tercer ítem del acordeón: Samuraï -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Samuraï
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
-                            <div class="image-container col-12 col-md-4">
-                                <img src="media/img/samurai.jpg" alt="Samuraï" class="img-fluid me-3">
-                            </div>
-                            <div class="col-12 col-md-8 p-3">
-                                <p>Con un estilo marcado por la introspección y una sensibilidad lírica cautivadora, Samuraï es una de las voces que está ganando terreno en la música urbana española. Su enfoque en temas emocionales y su habilidad para fusionar géneros le ha permitido conectar profundamente con su audiencia. Su música es un reflejo de las complejidades de la vida y el amor, y cada canción es una invitación a explorar esas emociones ocultas que todos llevamos dentro.</p>
-                            </div>
-                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
-                                <button class="btn btn-primary">Saber más</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Cuarto ítem del acordeón: Paula Cendejas -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Paula Cendejas
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body d-flex flex-column flex-md-row position-relative">
-                            <div class="image-container col-12 col-md-4">
-                                <img src="media/img/paulacendejas.jpg" alt="Paula Cendejas" class="img-fluid me-3">
-                            </div>
-                            <div class="col-12 col-md-8 p-3">
-                                <p>Paula Cendejas es una artista que combina elegancia y fuerza en cada una de sus producciones. Con una trayectoria que comenzó en redes sociales, su talento y su voz envolvente la han llevado a consolidarse como una de las propuestas más frescas de la escena latina. Su estilo mezcla el pop con matices urbanos y letras sinceras, creando una experiencia sonora que es tan pegajosa como íntima. Cada lanzamiento de Paula reafirma su capacidad para reinventarse y conectar a través de sus letras.</p>
-                            </div>
-                            <div class="position-absolute" style="right: 15px; bottom: 15px;">
-                                <button class="btn btn-primary">Saber más</button>
-                            </div>
+                        <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                            <button class="btn btn-primary">Saber más</button>
                         </div>
                     </div>
                 </div>
             </div>
-              
-        </section>
-        
-    <!-- ----------------------------------------------------------- -->
-    
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        RAYE
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                        <div class="image-container col-12 col-md-4">
+                            <img src="media/img/raye.webp" alt="RAYE" class="img-fluid me-3">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <p>Desde el Reino Unido, Raye ha ganado notoriedad con su habilidad para transformar experiencias personales en himnos que conectan con miles de personas alrededor del mundo.</p>
+                        </div>
+                        <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                            <button class="btn btn-primary">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Samuraï
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                        <div class="image-container col-12 col-md-4">
+                            <img src="media/img/samurai.jpg" alt="Samuraï" class="img-fluid me-3">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <p>Con un estilo marcado por la introspección y una sensibilidad lírica cautivadora, Samuraï es una de las voces que está ganando terreno en la música urbana española.</p>
+                        </div>
+                        <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                            <button class="btn btn-primary">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Paula Cendejas
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex flex-column flex-md-row position-relative">
+                        <div class="image-container col-12 col-md-4">
+                            <img src="media/img/paulacendejas.jpg" alt="Paula Cendejas" class="img-fluid me-3">
+                        </div>
+                        <div class="col-12 col-md-8 p-3">
+                            <p>Paula Cendejas es una artista que combina elegancia y fuerza en cada una de sus producciones.</p>
+                        </div>
+                        <div class="position-absolute" style="right: 15px; bottom: 15px;">
+                            <button class="btn btn-primary">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer bg-primary text-light py-5">
         <div class="container">
             <div class="row">
-                <!-- Columna Grove -->
                 <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Grove</h5>
                     <ul class="list-unstyled">
@@ -247,8 +216,6 @@
                         <li><a href="#" class="text-light">Contact Us</a></li>
                     </ul>
                 </div>
-    
-                <!-- Columna Legal -->
                 <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Legal</h5>
                     <ul class="list-unstyled">
@@ -258,8 +225,6 @@
                         <li><a href="#" class="text-light">Privacy Preferences</a></li>
                     </ul>
                 </div>
-    
-                <!-- Columna Sitemap -->
                 <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Sitemap</h5>
                     <ul class="list-unstyled">
@@ -270,8 +235,6 @@
                         <li><a href="#" class="text-light">Pro</a></li>
                     </ul>
                 </div>
-    
-                <!-- Columna Newsletter -->
                 <div class="col-12 col-md-3">
                     <h5>NEWSLETTER</h5>
                     <div class="newsletter d-flex">
@@ -282,17 +245,11 @@
             </div>
         </div>
     </footer>
-    
-
-    <!-- JavaScript de Bootstrap y jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1hb7mfId+U1nJ42hA5VmsEHP6Zy7n7GZkLVE6N" crossorigin="anonymous"></script>
-    <!-- Tu JavaScript personalizado -->
     <script src="js/script.js"></script>
-    <!-- JQuery -->
     <script src="js/jquery.js"></script>
-    <!-- jQuery Marquee plugin -->
     <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
     <script src="js/jquery.marquee.js"></script>
     <script src="js/jquery.marquee.min.js"></script>

@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GROVE</title>
-    <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
-        <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
-                <!-- Botón Menú -->
                 <div class="menu-container">
                     <button id="menuButton" class="btn btn-menu">Menú</button>
                     <div id="menuOptions" class="menu-options d-none">
@@ -25,28 +20,22 @@
                         <a href="news.html" class="btn btn-menu-option">Noticias</a>
                     </div>
                 </div>
-    
-                <!-- Logo centrado -->
                 <a class="logo navbar-brand position-absolute top-50 start-50 translate-middle text-center" href="index.html">GROVE</a>
-    
-                <!-- Barra de búsqueda -->
-                <div class="search d-flex ms">
+                <div class="d-none d-md-flex search ms-3">
                     <input type="text" class="form-control" placeholder="Buscar aquí..." id="searchInput">
                     <button class="btn btn-yellow" onclick="searchFunction()"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="d-flex d-md-none ms-3">
+                    <button class="btn btn-yellow" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <!-- ----------------------------------------------------------- -->
-
     <main class="container py-5 container-news">
         <div class="marquee mb-5 marquee-news">
             NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> 
         </div>
-        
         <div class="container-newscard row g-4">
-            <!-- Generar 9 fichas en 3 filas y 3 columnas -->
             <div class="col-md-4">
                 <div class="news-card">
                     <div class="news-image"></div>
@@ -55,7 +44,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,7 +56,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +68,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,7 +80,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +92,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,7 +104,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,7 +116,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +128,7 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,27 +140,16 @@
                         <div class="date-icon-container">
                             <div class="news-date">00/00/0000</div>
                             <i class="news-icon fa-solid fa-arrow-right"></i>
-                        </div>                
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- ----------------------------------------------------------- -->
-    
     <footer class="footer bg-primary text-light py-5">
         <div class="container">
             <div class="row">
-                <!-- Columna Grove -->
-                <div class="col-md-3">
+                <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Grove</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light">About Us</a></li>
@@ -181,9 +159,7 @@
                         <li><a href="#" class="text-light">Contact Us</a></li>
                     </ul>
                 </div>
-
-                <!-- Columna Legal -->
-                <div class="col-md-3">
+                <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Legal</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light">Privacy Policy</a></li>
@@ -192,9 +168,7 @@
                         <li><a href="#" class="text-light">Privacy Preferences</a></li>
                     </ul>
                 </div>
-
-                <!-- Columna Sitemap -->
-                <div class="col-md-3">
+                <div class="col-4 col-md-3 mb-4 mb-md-0">
                     <h5>Sitemap</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light">Charts</a></li>
@@ -204,9 +178,7 @@
                         <li><a href="#" class="text-light">Pro</a></li>
                     </ul>
                 </div>
-
-                <!-- Columna Newsletter -->
-                <div class="col-md-3">
+                <div class="col-12 col-md-3">
                     <h5>NEWSLETTER</h5>
                     <div class="newsletter d-flex">
                         <input type="email" class="form-control" placeholder="Escribe tu correo aquí...">
@@ -216,16 +188,11 @@
             </div>
         </div>
     </footer>
-
-    <!-- JavaScript de Bootstrap y jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1hb7mfId+U1nJ42hA5VmsEHP6Zy7n7GZkLVE6N" crossorigin="anonymous"></script>
-    <!-- Tu JavaScript personalizado -->
     <script src="js/script.js"></script>
-    <!-- JQuery -->
     <script src="js/jquery.js"></script>
-    <!-- jQuery Marquee plugin -->
     <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
     <script src="js/jquery.marquee.js"></script>
     <script src="js/jquery.marquee.min.js"></script>
