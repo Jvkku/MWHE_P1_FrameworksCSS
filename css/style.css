@@ -405,8 +405,10 @@ nav .container {
 
 .fa-xmark {
     color: #e6007e;
-    font-size: 48px; /* Usa font-size en lugar de size */
+    font-size: 48px; /* Tamaño del icono */
+    vertical-align: middle; /* Alineación vertical para centrar con el texto */
 }
+
 
 .container-newscard {
     padding: 0 20px;
