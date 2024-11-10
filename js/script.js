@@ -30,6 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function toggleSearch() {
+    const searchBar = document.getElementById("searchInput");
+    if (searchBar.classList.contains("d-none")) {
+        searchBar.classList.remove("d-none");
+        searchBar.focus();
+    } else {
+        searchBar.classList.add("d-none");
+    }
+}
+
 function searchFunction() {
     const query = document.getElementById('searchInput').value.toLowerCase();
     if (query === 'noticias') {

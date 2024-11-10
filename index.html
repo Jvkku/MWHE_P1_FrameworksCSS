@@ -26,15 +26,22 @@
                         <a href="news.html" class="btn btn-menu-option">Noticias</a>
                     </div>
                 </div>
-
+                
                 <!-- Logo centrado -->
                 <a class="logo navbar-brand position-absolute top-50 start-50 translate-middle text-center" href="index.html">GROVE</a>
 
                 <!-- Barra de búsqueda -->
-                <div class="search d-flex ms">
+                <!-- Barra de búsqueda y el icono de búsqueda -->
+                <div class="d-none d-md-flex search ms-3">
                     <input type="text" class="form-control" placeholder="Buscar aquí..." id="searchInput">
                     <button class="btn btn-yellow" onclick="searchFunction()"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
+
+                <!-- Icono de lupa visible solo en pantallas pequeñas -->
+                <div class="d-flex d-md-none ms-3">
+                    <button class="btn btn-yellow" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
             </div>
         </nav>
     </header>
