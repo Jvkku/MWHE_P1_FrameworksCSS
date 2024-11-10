@@ -208,6 +208,96 @@ nav .container {
     background-color: #e6007e;
     color: #fff;
 }
+/* ---------------------------------------------------------------- */
+/* Estilos para la tarjeta */
+.nextconcerts h1, .newartists h1{
+    font-family: 'Akony', sans-serif;
+    color: #e1e1e1;
+    font-size: 2rem;
+    }
+    
+    .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s;
+    aspect-ratio: 4 / 5; /* Proporción de 4:5 para la tarjeta */
+    }
+    .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste de la imagen para cubrir el área de la tarjeta */
+    }
+    /* Cuerpo de la tarjeta, que se mostrará al hacer hover */
+    .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: #e6007fc9;
+    padding: 1rem;
+    transform: translateY(100%); /* Oculto fuera de la vista */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    }
+    
+    .pink {
+    background-color: rgba(255, 0, 242, 0.837)8; /* Fondo semitransparente */
+    }
+    .blue {
+    background-color: #3868b0da; /* Fondo semitransparente */
+    }
+    /* Mostrar el contenido al pasar el ratón */
+    .card:hover .card-body {
+    transform: translateY(0); /* Desplazar hacia arriba para mostrar */
+    }
+    .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    }
+    .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    }
+    .event-location {
+    font-size: 0.8rem;
+    color: #e1e1e1; /* Color de texto más claro */
+    }
+    /* Acordeón */
+    .newartists h1 {
+    padding-top: 5rem;
+    }
+    
+    .accordion {
+    --bs-accordion-border-color: #000000;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-bg: #3869b0;
+    }
+    
+    .accordion-item {
+    color: #ffffff;
+    }
+    
+    .accordion-button {
+    background-color: #e9e34b;
+    font-family: 'Akony', sans-serif;
+    font-size: 4rem;
+    padding: 3.5rem 0 3rem 2rem;
+    }
+    
+    .accordion-button:not(.collapsed) {
+    background-color: #e6007e;
+    color: #ffffff;
+    }
+    
+    .me-3 {
+    margin-right: 1rem;
+    }
+
+/* ---------------------------------------------------------------- */
+
 
 /* Footer */
 .footer {
