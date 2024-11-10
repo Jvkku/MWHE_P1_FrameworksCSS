@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
             <div class="container">
                 <!-- Botón Menú -->
                 <div class="menu-container">
@@ -25,10 +25,10 @@
                         <a href="news.html" class="btn btn-menu-option">Noticias</a>
                     </div>
                 </div>
-
+    
                 <!-- Logo centrado -->
                 <a class="logo navbar-brand position-absolute top-50 start-50 translate-middle text-center" href="index.html">GROVE</a>
-
+    
                 <!-- Barra de búsqueda -->
                 <div class="search d-flex ms">
                     <input type="text" class="form-control" placeholder="Buscar aquí..." id="searchInput">
@@ -37,10 +37,11 @@
             </div>
         </nav>
     </header>
+    
     <!-- ----------------------------------------------------------- -->
 
     <main class="container py-5 container-news">
-        <div class="marquee mb-5">
+        <div class="marquee mb-5 marquee-news">
             NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> NOTICIAS <i class="fa-solid fa-xmark fa-2xl"></i> 
         </div>
         
