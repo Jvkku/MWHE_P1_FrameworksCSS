@@ -282,6 +282,10 @@ nav .container {
     color: #e1e1e1; /* Color de texto más claro */
     }
     /* Acordeón */
+    .newartists {
+    margin: 0.7em;
+    }
+
     .newartists h1 {
     padding-top: 5rem;
     padding-left: 1rem;
@@ -502,6 +506,8 @@ nav .container {
         border-top-right-radius: 12px;
         width: 107px;
     }
+
+
     
     /* Contenedor desplegable de opciones */
     .menu-options {
@@ -541,5 +547,12 @@ nav .container {
     .hero {
         
     }
+    
+    .nextconcerts h1, .newartists h1 {
+        font-size: 1rem;
+    }
 
+    .newartists div p {
+        display: none;
+    }
 }
